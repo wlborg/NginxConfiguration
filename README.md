@@ -10,37 +10,67 @@ cd dircotry
 mddir
 ```
 
+
+
 ## 目录和文件说明
 
-
-
 |-- 根目录
-    |-- `README.html`
-    |-- `README.md` `说明文件`
-    |-- `conf` `配置目录`
+    |-- README.html
+    |-- README.md 
+    |-- conf `配置目录`
         |-- `503.conf` `维护配置文件`
-        |-- `anti_spam_bots.conf` `屏蔽垃圾蜘蛛或者爬虫`
-        |-- `baidusearch.conf` `百度站内搜索本地化`
-        |-- `gongshang.conf` `应对工商查询`
-        |-- `guard_dedecms.conf` `dedecms 织梦系统防护配置`
-        |-- `m.yourdomain.com.pagespeed.conf` `移动端pagespeed配置文件`
-        |-- `mobile2pc.conf` `移动端跳到PC端` 
-        |-- `nginx.conf` `nginx主配置文件`
-        |-- `nocached.conf` `禁止服务器和浏览器缓存文件配置`
-        |-- `pc2mobile.conf` `PC跳转移动端配置`
-        |-- `secure_cors.conf` `HTTPS安全和跨域配置`
-        |-- `www.yourdomain.com.pagespeed.conf` `PC端pagespeed配置`
-        |-- `vhost` `虚拟主机配置目录`
-            |-- `m.yourdomain.com.conf` `移动端主机`
-            |-- `www.yourdomain.com.conf` `PC端主机`
+        |-- anti_spam_bots.conf
+        |-- baidusearch.conf
+        |-- gongshang.conf
+        |-- guard_dedecms.conf
+        |-- m.yourdomain.com.pagespeed.conf
+        |-- mobile2pc.conf
+        |-- nginx.conf
+        |-- nocached.conf
+        |-- pc2mobile.conf
+        |-- secure_cors.conf
+        |-- www.yourdomain.com.pagespeed.conf
+        |-- vhost
+            |-- m.yourdomain.com.conf
+            |-- www.yourdomain.com.conf
 
 
 
 ## 文件说明
 
-除了`vhost`内是主要的配置文件，以及`nginx.conf`主配置外，其他的配置文件都属于“增强模块”，可以依据情况引入。
+除了`vhost`内是主要的配置文件，以及`nginx.conf`主配置外，其他的配置文件都属于“增强模块”，可以依据情况引入。如果要使用`pagespeed`配置文件，则必须安装`pagespeed`组件。
 
-如果要使用`pagespeed`配置文件，则必须安装`pagespeed`组件
+`conf` 是`nginx`配置目录
+
+`503.conf` 是网站维护状态配置文件
+
+`anti_spam_bots.conf`  屏蔽垃圾蜘蛛或者爬虫
+
+`baidusearch.conf` 百度站内搜索本地化
+
+`gongshang.conf` 应对工商检查，使用的时候请尽早引入
+
+`guard_dedecms.conf`  dedecms 织梦系统防护配置
+
+ `m.yourdomain.com.pagespeed.conf` 移动端pagespeed配置文件
+
+`mobile2pc.conf`移动端跳到PC端
+
+ `nginx.conf` nginx主配置文件
+
+`nocached.conf` 禁止服务器和浏览器缓存文件配置
+
+ `pc2mobile.conf` PC跳转移动端配置
+
+ `secure_cors.conf` HTTPS安全和跨域配置
+
+`www.yourdomain.com.pagespeed.conf` PC端pagespeed配置
+
+`vhost` 虚拟主机配置目录
+
+`m.yourdomain.com.conf` 移动端主机
+
+ `www.yourdomain.com.conf` PC端主机
 
 推荐的最基本配置文件是：
 `anti_spam_bots.conf`
