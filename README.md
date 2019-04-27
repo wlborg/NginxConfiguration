@@ -12,6 +12,8 @@ mddir
 
 ## 目录和文件说明
 
+
+
 |-- 根目录
     |-- `README.html`
     |-- `README.md` `说明文件`
@@ -31,6 +33,8 @@ mddir
         |-- `vhost` `虚拟主机配置目录`
             |-- `m.yourdomain.com.conf` `移动端主机`
             |-- `www.yourdomain.com.conf` `PC端主机`
+
+
 
 ## 文件说明
 
